@@ -3,7 +3,7 @@ var MyConstants = {
   DB_USER: 'bbb',
   DB_PASS: 'ccc',
   DB_DATABASE: 'shoppingonline',
-  HOSTNAME: 'ddd.herokuapp.com',
+  HOSTNAME: 'localhost:3000',
   EMAIL_USER: 'eee@hotmail.com',
   EMAIL_PASS: 'fff',
 };
