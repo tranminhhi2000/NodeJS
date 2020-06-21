@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <head>
   <link href="/css/styles.css" type="text/css" rel="stylesheet" />
@@ -95,7 +95,7 @@
   <%  } %>
 </body>
 
-</html>
+</html> -->
 
 
 <!DOCTYPE html>
@@ -175,10 +175,6 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class="nav-item hidden-xs-down search-box"> <a class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i class="fa fa-search"></i></a>
-                            <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="fa fa-times"></i></a> </form>
-                        </li>
                     </ul>
                     <!-- ============================================================== -->
                     <!-- User profile and search -->
@@ -187,9 +183,7 @@
                         <!-- ============================================================== -->
                         <!-- Profile -->
                         <!-- ============================================================== -->
-                        <li class="nav-item dropdown u-pro">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../homeadmin/assets/images/users/1.jpg" alt="user" class="" /> <span class="hidden-md-down">Mark Sanders &nbsp;</span> </a>
-                        </li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -206,24 +200,17 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li> <a class="waves-effect waves-dark" href="index.html" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a>
+                        <li> <a class="waves-effect waves-dark" href="home" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Home</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.html" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Profile</span></a>
+                        <li> <a class="waves-effect waves-dark" href="listcategory" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Category</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="table-basic.html" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Tables</span></a>
+                        <li> <a class="waves-effect waves-dark" href="listcustomer" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Customer</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="icon-fontawesome.html" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Icons</span></a>
+                        <li> <a class="waves-effect waves-dark" href="listorder" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Order</span></a>
                         </li>
-                        <li> <a class="waves-effect waves-dark" href="map-google.html" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Map</span></a>
-                        </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-blank.html" aria-expanded="false"><i class="fa fa-bookmark-o"></i><span class="hide-menu">Blank</span></a>
-                        </li>
-                        <li> <a class="waves-effect waves-dark" href="pages-error-404.html" aria-expanded="false"><i class="fa fa-question-circle"></i><span class="hide-menu">404</span></a>
+                        <li> <a class="waves-effect waves-dark" href="listproduct" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Product</span></a>
                         </li>
                     </ul>
-                    <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/adminwrap/" class="btn waves-effect waves-light btn-info hidden-md-down"> Upgrade to Pro</a>
-                    </div>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -245,14 +232,11 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Table Basic</h3>
+                        <h3 class="text-themecolor">CUSTOMER</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Table Basic</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
+                            <li class="breadcrumb-item active">Customer List</li>
                         </ol>
-                    </div>
-                    <div class="col-md-7 align-self-center">
-                        <a href="https://wrappixel.com/templates/adminwrap/" class="btn waves-effect waves-light btn btn-info pull-right hidden-sm-down"> Upgrade to Pro</a>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -266,58 +250,96 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Basic Table</h4>
-                                <h6 class="card-subtitle">Add class <code>.table</code></h6>
+                                <%  if (custs) { %>
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
+                                            <tr class="datatable">
+                                                <th>ID</th>
                                                 <th>Username</th>
-                                            </tr>
+                                                <th>Password</th>
+                                                <th>Name</th>
+                                                <th>Phone</th>
+                                                <th>Email</th>
+                                                <th>Active</th>
+                                                <th>Action</th>
+                                              </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Deshmukh</td>
-                                                <td>Prohaska</td>
-                                                <td>@Genelia</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Deshmukh</td>
-                                                <td>Gaylord</td>
-                                                <td>@Ritesh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Sanghani</td>
-                                                <td>Gusikowski</td>
-                                                <td>@Govinda</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Roshan</td>
-                                                <td>Rogahn</td>
-                                                <td>@Hritik</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Joshi</td>
-                                                <td>Hickle</td>
-                                                <td>@Maruti</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Nigam</td>
-                                                <td>Eichmann</td>
-                                                <td>@Sonu</td>
-                                            </tr>
+                                            <%  for (var item of custs) { %>
+                                                <tr class="datatable" onclick="window.location='./listcustomer?cid=<%=item._id%>'">
+                                                  <th><%=item._id%></th>
+                                                  <td><%=item.username%></td>
+                                                  <td><%=item.password%></td>
+                                                  <td><%=item.name%></td>
+                                                  <td><%=item.phone%></td>
+                                                  <td><%=item.email%></td>
+                                                  <td><%=item.active%></td>
+                                                  <td>
+                                                    <% if (item.active == 0) { %>
+                                                    <a href="./sendmail?id=<%=item._id%>">EMAIL</a>
+                                                    <% } else if (item.active == 1) { %>
+                                                    <a href="./deactive?id=<%=item._id%>&token=<%=item.token%>" onclick="return confirm('ARE YOU SURE?')">DEACTIVE</a>
+                                                    <% } %>
+                                                  </td>
+                                                </tr>
+                                                <%  } %>
                                         </tbody>
                                     </table>
                                 </div>
+                                <%  } %>
+                                <%  if (orders) { %>
+                                    <div class="align-center">
+                                      <h2 class="text-center">ORDER LIST</h2>
+                                      <table class="datatable" border="1">
+                                        <tr class="datatable">
+                                          <th>ID</th>
+                                          <th>Creation date</th>
+                                          <th>Cust.name</th>
+                                          <th>Cust.phone</th>
+                                          <th>Total</th>
+                                          <th>Status</th>
+                                        </tr>
+                                        <%  for (var item of orders) { %>
+                                        <tr class="datatable" onclick="window.location='./listcustomer?cid=<%=custID%>&oid=<%=item._id%>'">
+                                          <th><%=item._id%></th>
+                                          <td><%=new Date(item.cdate).toLocaleString()%></td>
+                                          <td><%=item.customer.name%></td>
+                                          <td><%=item.customer.phone%></td>
+                                          <td><%=item.total%></td>
+                                          <td><%=item.status%></td>
+                                        </tr>
+                                        <%  } %>
+                                      </table>
+                                    </div>
+                                    <%  } %>
+                                    <%  if (order) { %>
+                                    <div class="align-center">
+                                      <h2 class="text-center">ORDER DETAIL</h2>
+                                      <table class="datatable" border="1">
+                                        <tr class="datatable">
+                                          <th>No.</th>
+                                          <th>Prod.ID</th>
+                                          <th>Prod.name</th>
+                                          <th>Image</th>
+                                          <th>Price</th>
+                                          <th>Quantity</th>
+                                          <th>Amount</th>
+                                        </tr>
+                                        <%  for (var [i, item] of order.items.entries()) {  %>
+                                        <tr class="datatable">
+                                          <td><%=(i+1)%></td>
+                                          <td><%=item.product._id%></td>
+                                          <td><%=item.product.name%></td>
+                                          <td><img src="data:image/jpg;base64,<%=item.product.image%>" width="70" height="70" /></td>
+                                          <td><%=item.product.price%></td>
+                                          <td><%=item.quantity%></td>
+                                          <td><%=item.product.price * item.quantity%></td>
+                                        </tr>
+                                        <%  } %>
+                                      </table>
+                                    </div>
+                                    <%  } %>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <head>
   <link href="/css/styles.css" type="text/css" rel="stylesheet" />
@@ -66,6 +66,271 @@
     </table>
   </div>
   <%  } %>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../homeadmin/assets/images/favicon.png">
+    <title>AdminWrap - Easy to Customize Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../homeadmin/assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../homeadmin/css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="../homeadmin/css/colors/default.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Admin Wrap</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../homeadmin/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../homeadmin/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                         <!-- dark Logo text -->
+                         <img src="../homeadmin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <!-- Light Logo text -->    
+                         <img src="../homeadmin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="fa fa-bars"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li> <a class="waves-effect waves-dark" href="home" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Home</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="listcategory" aria-expanded="false"><i class="fa fa-user-circle-o"></i><span class="hide-menu">Category</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="listcustomer" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Customer</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="listorder" aria-expanded="false"><i class="fa fa-smile-o"></i><span class="hide-menu">Order</span></a>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="listproduct" aria-expanded="false"><i class="fa fa-globe"></i><span class="hide-menu">Product</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">CUSTOMER'S ORDER LIST</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Admin</a></li>
+                            <li class="breadcrumb-item active">Order List</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <%  if (orders) { %>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                          <tr class="datatable">
+                                            <th>ID</th>
+                                            <th>Creation date</th>
+                                            <th>Cust.name</th>
+                                            <th>Cust.phone</th>
+                                            <th>Total</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <%  for (var item of orders) { %>
+                                            <tr class="datatable" onclick="window.location='./listorder?id=<%=item._id%>'">
+                                              <th><%=item._id%></th>
+                                              <td><%=new Date(item.cdate).toLocaleString()%></td>
+                                              <td><%=item.customer.name%></td>
+                                              <td><%=item.customer.phone%></td>
+                                              <td><%=item.total%></td>
+                                              <td><%=item.status%></td>
+                                              <td>
+                                                <%  if (item.status == 'PENDING') {  %>
+                                                <a href="./updatestatus?status=APPROVED&id=<%=item._id%>">APPROVE</a>
+                                                ||
+                                                <a href="./updatestatus?status=CANCELED&id=<%=item._id%>">CANCEL</a>
+                                                <%  } %>
+                                              </td>
+                                            </tr>
+                                            <%  } %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <%  } %>
+                                <%  if (order) { %>
+                                  <div class="align-center">
+                                    <h2 class="text-center">ORDER DETAIL</h2>
+                                    <table class="datatable" border="1">
+                                      <tr class="datatable">
+                                        <th>No.</th>
+                                        <th>Prod.ID</th>
+                                        <th>Prod.name</th>
+                                        <th>Image</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Amount</th>
+                                      </tr>
+                                      <%  for (var [i, item] of order.items.entries()) {  %>
+                                      <tr class="datatable">
+                                        <td><%=(i+1)%></td>
+                                        <td><%=item.product._id%></td>
+                                        <td><%=item.product.name%></td>
+                                        <td><img src="data:image/jpg;base64,<%=item.product.image%>" width="70" height="70" /></td>
+                                        <td><%=item.product.price%></td>
+                                        <td><%=item.quantity%></td>
+                                        <td><%=item.product.price * item.quantity%></td>
+                                      </tr>
+                                      <%  } %>
+                                    </table>
+                                  </div>
+                                  <%  } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 Adminwrap by wrappixel.com
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../homeadmin/assets/node_modules/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../homeadmin/assets/node_modules/bootstrap/js/popper.min.js"></script>
+    <script src="../homeadmin/assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../homeadmin/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="../homeadmin/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../homeadmin/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../homeadmin/js/custom.min.js"></script>
+    <!-- jQuery peity -->
+    <script src="../homeadmin/assets/node_modules/peity/jquery.peity.min.js"></script>
+    <script src="../homeadmin/assets/node_modules/peity/jquery.peity.init.js"></script>
 </body>
 
 </html>
