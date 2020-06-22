@@ -66,7 +66,7 @@
 
       <div class="search-wrap">
         <div class="container">
-          <a href="/home.ejs" class="search-close js-search-close"><span class="icon-close2"></span></a>
+          <a href="./search" class="search-close js-search-close"><span class="icon-close2"></span></a>
           <form action="#" method="post">
             <input type="text" class="form-control" placeholder="Search keyword and hit enter...">
           </form>  
@@ -74,7 +74,7 @@
       </div>
 
       <div class="container">
-        <div class="float-right">
+        <div class="top">
           <%  if (session.customer) {  %>
           Hello <b><%=session.customer.name%></b> | <a href="./logout">Logout</a> | <a href="./myprofile">My profile</a> | <a href="./myorders">My orders</a>
           <%  } else {  %>
