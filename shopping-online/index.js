@@ -1,7 +1,7 @@
 //CLI: npm install express ejs body-parser express-session --save
 var express = require('express');
 var app = express();
-app.listen(process.env.PORT || 7000);
+app.listen(process.env.PORT || 8000);
 // middlewares
 app.use(express.static('public'));
 var bodyParser = require('body-parser');
