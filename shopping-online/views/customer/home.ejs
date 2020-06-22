@@ -76,7 +76,7 @@
       <div class="container">
         <div class="top">
           <%  if (session.customer) {  %>
-          Hello <b><%=session.customer.name%></b> | <a href="./logout">Logout</a> | <a href="./myprofile">My profile</a> | <a href="./myorders">My orders</a>
+          Hello <b><%=session.customer.name%></b> | <a href="./logout">Logout</a> | <a href="./myprofile">My profile</a>
           <%  } else {  %>
           <a href="./login">Login</a> | <a href="./signup">Sign-up</a>
           <%  } %>
@@ -94,17 +94,20 @@
                   <a href="home">Home</a>
                 </li>
                 
-                <li><a href="shop.html">Shop</a></li>
+                <li><a href="myorders">My order</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">New Arrivals</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <%  if (session.customer) {  %>
+                <li><a href="./mycart" >My cart</a></li>
+                <%  }   %>
               </ul>
             </nav>
           </div>
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
             <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
-            <a href="./mycart" class="icons-btn d-inline-block bag"> 
+            <a href="mycart" class="icons-btn d-inline-block bag"> 
               <span class="icon-shopping-bag"></span>
               <span class="number"><b><%= (session.mycart) ? session.mycart.length : 0 %></b></span>
             </a>

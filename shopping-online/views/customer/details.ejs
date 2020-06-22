@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-   
+    <form action="./add2cart" method="POST">
     <div class="site-section">
       <div class="container">
         <div class="row">
@@ -133,7 +133,6 @@
             </div>
           </div>
           <div class="col-md-6">
-            <form action="./add2cart" method="POST">
             <p>
               <td align="right">ID:</td>
               <td><%=prod._id%></td>
@@ -154,16 +153,17 @@
               <div class="input-group mb-3" style="max-width: 120px;">
               <input type="number" name="txtQuantity" value="1" min="1" max="99" class="form-control text-center" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-            </form>
+            
             </div>
             <p>
-              <a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Add To Cart</a>
               <input type="hidden" name="txtID" value="<%=prod._id%>" />
+              <input class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary" type="submit" value="ADD TO CART" />
             </p>
           </div>
         </div>
       </div>
     </div>
+  </form>
 
     
     </div>
